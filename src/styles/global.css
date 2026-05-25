@@ -1,0 +1,124 @@
+/* Custom Properties 
+---------------------------------------*/
+:root {
+    --darkauburn: #88171a;
+    --richvelvetred: #590e12;
+    /*-- rgb(89 14 18)*/
+    --daintree: #042730;
+    --metallicseaweed: #0c7a95;
+    --seaweedlight: rgba(12, 122, 149, .1);
+    --glossyyellow: #ffec54;
+    --darksage: #767856;
+    --pastelyellow: #f1e7d8;
+    --solidmattegray: #757575;
+    --color-dark: var(--richvelvetred);
+    --color-light: var(--pastelyellow);
+    --color-medium: var(--seaweedlight);
+    --color-primary: var(--daintree);
+
+    --font-size-h1: 5.5rem;
+
+    --font-size-h2: 3rem;
+    --font-size-base: 0.9375rem;
+    --font-size-tagline: 1.3rem;
+    --font-size-small: 0.7rem;
+
+}
+
+/* Global Styles 
+---------------------------------------*/
+/* Alternative box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormic", serif;
+}
+
+a {
+    color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: "Roboto", serif;
+
+}
+
+.bg-dark a,
+.bg-primary a {
+    color: var(--color-light);
+}
+
+.bg-light {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+.bg-medium {
+    background: var(--color-medium);
+    color: var(--color-dark);
+}
+
+.bg-dark {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+.bg-primary {
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+
+.list-reset {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+/* fonts ---------------------------------------- */
+/* <weight>: Use a value from 300 to 700---------*/
+/*<uniquifier>: Use a unique and descriptive class name---------*/
+
+
+.cormorant-Cormic {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-slab-Robo {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
