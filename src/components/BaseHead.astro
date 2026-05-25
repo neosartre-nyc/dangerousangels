@@ -13,7 +13,7 @@ interface Props {
   image?: ImageMetadata;
 }
 
-const { title, description } = Astro.props;
+const { title, description? } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -27,9 +27,9 @@ const { title, description } = Astro.props;
 <!-- <link rel="canonical" href={canonicalURL} /> -->
 
 <!-- Primary Meta Tags -->
-<!-- <title>{title}</title>
+<title>{title}</title>
 <meta name="title" content={title} />
-<meta name="description" content={description} /> -->
+<meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
 <!-- <meta property="og:type" content="website" />
