@@ -1,124 +1,33 @@
-/* Custom Properties 
----------------------------------------*/
-:root {
-    --darkauburn: #88171a;
-    --richvelvetred: #590e12;
-    /*-- rgb(89 14 18)*/
-    --daintree: #042730;
-    --metallicseaweed: #0c7a95;
-    --seaweedlight: rgba(12, 122, 149, .1);
-    --glossyyellow: #ffec54;
-    --darksage: #767856;
-    --pastelyellow: #f1e7d8;
-    --solidmattegray: #757575;
-    --color-dark: var(--richvelvetred);
-    --color-light: var(--pastelyellow);
-    --color-medium: var(--seaweedlight);
-    --color-primary: var(--daintree);
+@import url("https://fonts.googleapis.com/css2family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Slab:wght@100..900&display=swa");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Slab:wght@100..900&display=swap");
+@import "tailwindcss";
 
-    --font-size-h1: 5.5rem;
-    --font-size-h2: 3rem;
-    --font-size-base: 0.9375rem;
-    --font-size-tagline: 1.3rem;
-    --font-size-small: 0.7rem;
 
+@theme {
+--color-dac-red-50: #fff1f1;
+--color-dac-red-100: #ffe0e1;
+--color-dac-red-200: #ffc7c8;
+--color-dac-red-300: #ff9fa2;
+--color-dac-red-400: #ff686c;
+--color-dac-red-500: #fa393e;
+--color-dac-red-600: #e81a1f;
+--color-dac-red-700: #c31217;
+--color-dac-red-800: #a11317;
+--color-dac-red-900: #88171a;
+--color-dac-red-950: #490608;
+--color-dac-ash-50: #f5f5f1;
+--color-dac-ash-100: #e6e7dd;
+--color-dac-ash-200: #cfd1be;
+--color-dac-ash-300: #b2b598;
+--color-dac-ash-400: #999d78;
+--color-dac-ash-500: #858862;
+--color-dac-ash-600: #767856;
+--color-dac-ash-700: #585841;
+--color-dac-ash-800: #4b4b38;
+--color-dac-ash-900: #424233;
+--color-dac-ash-950: #24241a;
+
+--font-robo: "Roberto+Slab", serif;
+--font-cormo:"Cormorant", serif;
 }
 
-/* Global Styles 
----------------------------------------*/
-/* Alternative box model */
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Cormic", serif;
-}
-
-a {
-    color: var(--color-dark);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-    font-family: "Roboto", serif;
-    color:var(--color-dark)
-
-}
-
-.bg-dark a,
-.bg-primary a {
-    color: var(--color-light);
-}
-
-.bg-light {
-    background: var(--color-light);
-    color: var(--color-dark);
-}
-
-.bg-medium {
-    background: var(--color-medium);
-    color: var(--color-dark);
-}
-
-.bg-dark {
-    background: var(--color-dark);
-    color: var(--color-light);
-}
-
-.bg-primary {
-    background: var(--color-primary);
-    color: var(--color-light);
-}
-
-.list-reset {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.content-wrap {
-    max-width: 800px;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 60px;
-}
-
-/* fonts ---------------------------------------- */
-/* <weight>: Use a value from 300 to 700---------*/
-/*<uniquifier>: Use a unique and descriptive class name---------*/
-
-
-.cormorant-Cormic {
-    font-family: "Cormorant", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-/* // <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name */
-
-.roboto-slab-Robo {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}

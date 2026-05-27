@@ -25,4 +25,5 @@ pnpm-debug.log*
 
 # personal folders
 temp/
+*.bak*
 

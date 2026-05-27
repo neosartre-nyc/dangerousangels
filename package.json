@@ -16,7 +16,13 @@
     "@astrojs/cloudflare": "^13.5.4",
     "@astrojs/mdx": "^5.0.6",
     "@astrojs/sitemap": "^3.7.2",
+    "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.7",
+    "tailwindcss": "^4.3.0",
     "wrangler": "^4.94.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0"
   }
 }
