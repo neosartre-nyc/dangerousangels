@@ -1,66 +1,23 @@
 ---
-import "../styles/global.css";
+import Layout from "../layouts/Main.astro";
+import Contacts from "../components/homepage/Contacts.astro";
+import Hero from "../components/homepage/Hero.astro";
+import Sec1 from "../components/homepage/Sec1.astro";
+import Team from "../components/homepage/Team.astro";
+import Welcome from "../components/homepage/Welcome.astro";
+import Plan from "../components/homepage/Plan.astro";
+// import Feedback from "../components/homepage/Feedback.astro";
+import News from "../components/homepage/News.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DAC | Home</title>
-  </head>
-  <body>
-    <div class="bg-dac-red-950 p-5">
-      <div class="flex justify-between">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="50"
-          viewBox="0 0 101 150"
-        >
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #88171a;
-              }
-
-              .cls-2 {
-                fill: #fff;
-              }
-            </style>
-          </defs>
-          <g id="logoSq">
-            <path
-              class="cls-2"
-              d="M101.03,49.25c.23-16.16-13.19-30.6-29.49-30.47C43.36,23.15,37.85,29.04,20.45,1.67c-5.17-7.01-3.92,10.16-5.56,12.77-9.89,28.32-27.46,34.32-.79,61.4,25.76,28.6,18.19,69.99,31.07,74.25,6.2,1.57,10.19-4.58,12-9.58,6.42-15.03,17.79-44.91,29.59-61.62,7-9.17,14.58-17.16,14.28-29.63Z"
-            ></path>
-          </g>
-          <g id="logoRo">
-            <path
-              class="cls-1"
-              d="M59.8,61.51c-1.18-5.18-10.05-6.09-12.76-12.27-1.54,1.05-1.42,8.02-1.91,13.99-.21,10.93,17.07,9.62,14.67-1.71Z"
-            ></path>
-            <g>
-              <line class="cls-2" x1="52.43" y1="58.03" x2="57.97" y2="64.49"
-              ></line>
-              <path
-                class="cls-2"
-                d="M52.59,57.84c2.08.43,3.67,2.03,4.77,4.09.37.72.69,1.6.8,2.57.02.13-.05.25-.16.26-.4-.16-1.01-1.42-1.45-1.85-1.33-1.69-2.72-3.3-4.27-4.69-.18-.2-.07-.52.32-.38h0Z"
-              ></path>
-            </g>
-          </g>
-        </svg>
-        <h1
-          class="mx-auto text-5xl text-white text-center font-black font-robo"
-        >
-          Dangerous Angels Creative
-        </h1>
-      </div>
-      <h2 class="mx-auto mt-5 text-3xl text-dac-ash-100 text-center font-light">
-        Natalie Reuchlein, Media Designer
-      </h2>
-    </div>
-    <div class="class">
-      <img src="src/assets/images/dac_hero.webp" alt="hero" />
-    </div>
-  </body>
-</html>
+<Layout title="Homepage">
+  <div>
+    <Hero />
+    <Sec1 />
+    <Team />
+    <Welcome />
+    <Plan />
+    <News />
+    <Contacts />
+  </div>
+</Layout>

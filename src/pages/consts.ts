@@ -1,8 +1,8 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Dangerous Angels Creative';
-export const SITE_DESCRIPTION = 'Design the Meaning | Demystify the Real';
+export const SITE_TITLE = 'ProCleaning';
+export const SITE_DESCRIPTION = 'Specialized, efficient, and thorough cleaning services';
 
 
 export const NAV_MENU = [
@@ -19,10 +19,10 @@ export const NAV_MENU = [
         title: "Résumé"
     },
     {
-        url: "/journal",
-        title: "Mastery Journal"
+        url: "/team",
+        title: "Journal"
     },
-     {
+    {
         url: "/contact",
         title: "Contact"
     }
