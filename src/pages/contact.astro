@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import LogoSq from "../assets/dac-logoSquare.webp";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <BaseLayout>
+    <section class="bg-dacSage-100 p-12 md:p-44">
+      <div class="bg-dacBlue-950 h-auto w-auto">
+        <div class="p-8">
+          <h1 class="font-serif text-center text-5xl text-white">Natalie</h1>
+          <p class="font-serif text-center text-3xl text-dacRed-600 py-2">
+            Dangerous Angels Creative LLC
+          </p>
+          <p class="text-center text-2xl text-white">Design the Meaning</p>
+
+          <p class="text-white text-center">sms: +1 (616) 745-8687</p>
+          <p class="text-white text-center">
+            email: natalie@dangerousangelscreative.com
+          </p>
+          <Image src={LogoSq} alt="logosq" class="mx-auto m-4" />
+          <p class="text-white text-center">
+            767 Broadway #1058 Manhattan NY 10003-6803
+          </p>
+        </div>
+      </div>
+    </section>
+  </BaseLayout>
+</html>

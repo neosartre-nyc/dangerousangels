@@ -1,0 +1,113 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+  </head>
+  <BaseLayout class="p-10">
+    <section class="bg-dacBlue-900 p-8">
+      <div class="flex flex-row gap-8 flex-wrap">
+        <div
+          class="flex w-full max-w-md items-center gap-2 rounded-lg bg-white p-4"
+        >
+          <img
+            class="h-24 w-24 shrink-0 rounded-full"
+            src="images/dac-relationships.webp"
+            alt=""
+          />
+
+          <div class="min-w-0 flex-1 space-y-2 text-center">
+            <div class="space-y-0.5">
+              <p class="text-lg font-semibold text-black">
+                Audience Relationships
+              </p>
+              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+            </div>
+
+            <button
+              class="border-purple-200 text-dacRed-600 hover:border-transparent hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Brand Architecture -->
+        <div
+          class="w-full max-w-md flex items-center gap-2 bg-white rounded-lg p-6"
+        >
+          <!-- Changed to flex for side-by-side layout -->
+          <img
+            class="h-24 rounded-full shrink-0"
+            src="images/dac-architecture.webp"
+            alt=""
+          />
+          <div class="space-y-2 text-center grow">
+            <div class="space-y-0.5">
+              <p class="text-lg font-semibold text-black">Brand Architecture</p>
+              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+            </div>
+            <button
+              class="border-purple-200 text-dacRed-600 hover:border-transparent hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <!-- Card 3: Visual Communication -->
+        <div
+          class="flex w-full max-w-md items-center gap-2 bg-white rounded-lg p-6"
+        >
+          <!-- Changed to flex for side-by-side layout -->
+          <img
+            class="h-24 rounded-full shrink-0"
+            src="images/dac-visual.webp"
+            alt=""
+          />
+          <div class="space-y-2 text-center grow">
+            <div class="space-y-0.5">
+              <p class="text-lg font-semibold text-black">
+                Visual Communication
+              </p>
+              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+            </div>
+            <button
+              class="border-purple-200 text-dacRed-600 hover:border-transparent hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <!-- Card 4: Resume -->
+        <div
+          class="flex w-full max-w-md items-center gap-2 bg-white rounded-lg p-6"
+        >
+          <!-- Changed to flex for side-by-side layout -->
+          <img
+            class="h-24 rounded-full shrink-0"
+            src="images/dac-resume.webp"
+            alt=""
+          />
+          <div class="space-y-2 text-center grow">
+            <div class="space-y-0.5">
+              <p class="text-lg font-semibold text-black">Natalie's Résumé</p>
+              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+            </div>
+            <button
+              type="button"
+              onclick="window.location.href='/resume'"
+              class="border-purple-200 text-dacRed-600 hover:border-transparent hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </BaseLayout>
+</html>

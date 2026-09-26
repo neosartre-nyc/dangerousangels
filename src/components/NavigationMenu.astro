@@ -1,0 +1,112 @@
+---
+// NavigationMenu.astro
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import Logo from "../assets/images/dac_logo.png";
+---
+
+<nav class="bg-dacRed-900 text-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Navigation Bar -->
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo/Brand (Left Side) -->
+      <div class="shrink-0">
+        <a
+          href="/"
+          class="flex text-1xl font-bold text-white font-serif tracking-wider"
+        >
+          <Image src={Logo} alt="logo" height="40" />Dangerous Angels Creative
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+        <a
+          href="#about"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+          >About</a
+        >
+        <a
+          href="/product"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+          >Services</a
+        >
+        <a
+          href="/contact"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+          >Contact</a
+        >
+        <a
+          href="https://videos.dangerousangelscreative.com/"
+          target="_blank"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+          >Videos</a
+        >
+      </div>
+
+      <!-- Mobile Menu Button (Hamburger) -->
+      <div class="flex md:hidden items-center">
+        <button
+          id="menu-button"
+          class="text-gray-400 hover:text-white focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <svg
+            id="menu-icon"
+            class="w-6 h-6 transition-transform duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Dropdown (Hidden by default) -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-gray-700">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a
+        href="#about"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out"
+        >About</a
+      >
+      <a
+        href="#services"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out"
+        >Services</a
+      >
+      <a
+        href="/contact"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out"
+        >Contact</a
+      >
+    </div>
+    <a
+      href="https://videos.dangerousangelscreative.com"
+      target="_blank"
+      class="block px-6 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out"
+      >Videos</a
+    >
+  </div>
+</nav>
+
+<script>
+  // Attach event listener directly (no DOMContentLoaded needed)
+  const menuButton = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+
+  if (menuButton) {
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuIcon.classList.toggle("rotate-90"); // Simple rotation animation
+    });
+  }
+</script>

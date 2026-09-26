@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Summa from "../assets/images/resume.png";
+---
+
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Résumé</title>
+  <Layout>
+    <main class="py-24 bg-dacBlue-900">
+      <!-- //  RESUME  // -->
+      <section class="bg-dacBlue-50 mx-40">
+        <h2 class="font-serif pt-8 text-3xl text-dacBlue-950 text-center">
+          Résumé
+        </h2>
+        <Image
+          src={Summa}
+          alt="Resume"
+          sizes="100vw"
+          style="max-width: 80%; height: auto;"
+        />
+      </section>
+    </main>
+    <!-- end of RESUME -->
+  </Layout>
+</html>
