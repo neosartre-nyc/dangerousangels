@@ -1,8 +1,0 @@
-packages:
-  - "apps/*"
-  - "packages/*"
-  - "." # Include root if your main app is in the root directory
-
-allowBuilds:
-  esbuild: true
-  workerd: true
