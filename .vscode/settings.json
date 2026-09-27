@@ -4,9 +4,5 @@
     "relative": true
   },
   "frontMatter.git.enabled": true,
-  "frontMatter.content.pageFolders": [
-    {
-      "path": "[[workspace]]/src/content/blog"
-    }
-  ]
+  "frontMatter.content.pageFolders": []
 }
