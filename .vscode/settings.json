@@ -4,5 +4,10 @@
     "relative": true
   },
   "frontMatter.git.enabled": true,
-  "frontMatter.content.pageFolders": []
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/src/content"
+    }
+  ]
 }
