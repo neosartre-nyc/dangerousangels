@@ -54,7 +54,13 @@
   }
 }
 
-@layer {
+@theme {
+  --font-sans: "QuaySans", sans-serif;
+  --font-serif: "Merriweather", serif;
+}
+
+
+@layer components {
   .footer {
     text-align: center;
     padding: 3.75rem;
