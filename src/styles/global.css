@@ -75,4 +75,25 @@
     width: 2.18rem;
     margin: 1rem;
   }
+
+  .prose {
+    text-indent: 2rem;
+  }
+
+  .prose h2 {
+    font-weight: 500;
+    font-size: x-large;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+
+  .prose h3 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-indent: 0rem;
+    border-left-width: thick;
+    font-size: x-large;
+    border-left-color: var(--color-dacRed-900);
+    padding: 1rem 0rem 1rem 1rem;
+  }
 }

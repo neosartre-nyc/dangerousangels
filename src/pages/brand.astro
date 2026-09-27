@@ -1,0 +1,23 @@
+---
+import * as brandRelate from "../content/2026-09-27-brandrelationship.md";
+const compiled = await brandRelate.compiledContent();
+import Layout from "../layouts/Layout.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <Layout>
+      <section class="p-8">
+        <h1 class="font-serif text-3xl">{brandRelate.frontmatter.title}</h1>
+        <div class="prose leading-relaxed">
+          <Fragment set:html={compiled} />
+        </div>
+      </section>
+    </Layout>
+  </body>
+</html>
