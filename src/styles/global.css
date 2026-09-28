@@ -80,13 +80,18 @@
     text-indent: 2rem;
   }
 
+  .prose h1 {
+    text-align: center;
+  }
+  
   .prose h2 {
+    text-indent: 0rem;
     font-weight: 500;
     font-size: x-large;
     padding-top: 1rem;
     padding-bottom: .5rem;
   }
-
+  
   .prose h3 {
     margin-top: 1rem;
     margin-left: 2rem;

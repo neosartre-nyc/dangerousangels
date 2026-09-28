@@ -1,5 +1,5 @@
 ---
-title: Brand Relationships
+title: Brand Architecture
 description: ""
 date: 2026-09-27T15:45:55.257Z
 preview: ""
@@ -19,3 +19,5 @@ Ultimately, the process serves as a tool for brands to shift from transactional 
 ### People are not focused on products, but _meaning_.
 
 — Marty Neumeier
+
+## Audience Identity
