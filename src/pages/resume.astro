@@ -11,20 +11,64 @@ import Summa from "../assets/images/resume.png";
   <Layout>
     <main class="py-24 bg-dacBlue-900">
       <!-- //  RESUME  // -->
-      <section class="bg-dacBlue-50 mx-40">
-        <h2
-          class="font-serif pt-8 text-lg md:text-2xl lg:text-3xl text-dacBlue-950 text-center"
+      <section class="bg-dacBlue-50 mx-20 lg:mx-40 xl:mx-60">
+        <a
+          href="src/assets/images/resume.webp"
+          target="_blank"
+          aria-label="Open full-size resume"
         >
-          Résumé
-        </h2>
-        <Image
-          src={Summa}
-          alt="Resume"
-          sizes="100vw"
-          style="max-width: calc(100%-2em); height: auto;"
-        />
+          <Image
+            src={Summa}
+            alt="Resume of Natalie Reuchlein - designer for over 20 years"
+            style="max-width: 100%; height: auto;"
+            loading="lazy"
+          />
+        </a>
       </section>
+      <!-- public folder resume download button -->
+      <a
+        href="/pdfs/reuchlein-natalie-resume.pdf"
+        download="Reuchlein-N-Resume.pdf"
+        class="resume-button mx-20 md:mx40 lg:mx-60"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Resume (PDF)
+      </a>
+      <!-- end of RESUME -->
     </main>
-    <!-- end of RESUME -->
   </Layout>
+
+  <style>
+    .resume-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--color-dacBlue-700);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .resume-button:hover {
+      background-color: var(--color-dacRed-900);
+    }
+  </style>
+
+
 </html>
