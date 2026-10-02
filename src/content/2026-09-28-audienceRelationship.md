@@ -21,16 +21,16 @@ In today's era, this psychological drive extends far beyond mere aesthetics. It 
 
 ## The Intersection
 
-The intersection of of brand and people is a relationship that in ongoing. The validation phenomenon speaks to the profound power of identity-based validation in shaping our actions and decisions. By consistently seeking out groups that align with their preferred archetype, people create a sense of belonging - not just to the group itself, but also to the idealized representation they've chosen to emulate. This process of self-identification and external validation is both alluring and insidious, subtly influencing our thoughts, behaviors, and relationships in ways both profound and far-reaching.
+The **intersection** of of brand and people is a relationship that in ongoing. The validation phenomenon speaks to the profound power of identity-based validation in shaping our actions and decisions. By consistently seeking out groups that align with their preferred **archetype**, people create a sense of belonging - not just to the group itself, but also to the idealized representation they've chosen to emulate. This process of self-identification and external validation is both alluring and insidious, subtly influencing our thoughts, behaviors, and relationships in ways both profound and far-reaching.
 
-To understand an audience, as we segment into communities, we look to understand and capture social realities. Sociology uses a combination of tools and methods to better understand interpersonal relationships and translate into applied sociology. When you understand your communities you can more easily bond with your **cult**.
+To understand an audience, as we segment into communities, we look to understand and capture **social realities**. Sociology uses a combination of tools and methods to better understand interpersonal relationships and translate into applied sociology. When you understand your communities you can more easily bond with your **cult**.
 
 ### A cautionary tale for brands reliant on strong emotional connections with their consumer base
 
 ## In Reality
 
-Many companies severed their relationship with the Nation Rifle Association (NRA) after the Parkland, Florida school shooting in February of 2018. Yeti, the cooler company, canceled it's vendor relationship. It's mythos built influence among a key demographic: enthusiasts of outdoor recreation such as hunting, fishing, surfing, off-roading, and camping.
+Many companies severed their relationship with the Nation Rifle Association (NRA) after the Parkland, Florida school shooting in February of 2018. Yeti, the cooler company, **canceled** it's vendor relationship. It's mythos built influence among a key demographic: enthusiasts of outdoor recreation such as hunting, fishing, surfing, off-roading, and camping.
 
-The company's loyal customer cult amassed around an aspirational brand mythology centered on rugged individualists who embody the American outdoorsman archetype - much like the NRA's own promotional material for hunting enthusiasts and Second Amendment supporters. However, this idealized "Yeti" steel persona would rust in the backlash from gun-control advocates.
+The company's loyal customer cult amassed around an aspirational brand mythology centered on rugged individualists who embody the American outdoorsman archetype - much like the NRA's own promotional material for hunting enthusiasts and Second Amendment supporters. However, this idealized "Yeti" steel persona would rust in the **backlash** from gun-control advocates.
 
-The overlap between these two groups created a perfect storm of brand damage. Yeti's carefully crafted mythos was no longer tenable when seen as aligned with an organization that represented the opposing view on gun control. Competitors swiftly seized the opportunity to carve out market share by exploiting this brand vulnerability, further exacerbating the erosion of Yeti's value chain.
+The overlap between these two groups created a perfect storm of brand damage. Yeti's carefully crafted mythos was no longer tenable when seen as aligned with an organization that represented the opposing view on gun control. Competitors swiftly seized the opportunity to carve out market share by exploiting this brand **vulnerability**, further exacerbating the erosion of Yeti's value chain.
