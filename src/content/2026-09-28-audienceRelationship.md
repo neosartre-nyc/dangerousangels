@@ -7,20 +7,23 @@ draft: false
 tags: [audience]
 categories: []
 ---
-
 ## Identity
 
-In the realm of social validation, individuals instinctively gravitate towards idealized representations of themselves, often mirroring the characteristics they aspire to possess. This innate desire for self-validation is perpetuated through affinity groups that reinforce their preferred identity archetypes - such as traditionally masculine or feminine personas, artistic or outdoorsy pursuits, or leadership or nonconformity behaviors.
+Individualism is a myth. It's a developed culture and a well told story but in reality we don't live alone, we don't produce alone, we don't survive alone and in the end we don't make decisions in an individual vacuum. Within a society we belong to different communities and those communities build a sense of belonging. A social creatures we all enjoy **belonging**. Individual identity is not necessarily eradicated, except in radical or extreme cirumstances, but it is influenced by the individual's community and society.
 
-In today's era, this psychological drive extends far beyond mere aesthetics. It now deeply influences our relationships and affiliations with others, aligns group ideologies, at builds solidarity in facing some realities. The desire to resonate with like-minded individuals who embody the same aspirational ideals fuels our social connections, often leading us down paths that validate our self-perceived identities.
+In the realm of social validation, individuals instinctively gravitate towards idealized representations of themselves, often mirroring the characteristics they aspire to possess. This innate desire for **self-validation** is perpetuated through affinity groups that reinforce their preferred identity archetypes - such as traditionally masculine or feminine personas, artistic or outdoorsy pursuits, or leadership or nonconformity behaviors.
+
+In today's era, this psychological drive extends far beyond mere aesthetics. It now deeply influences our relationships and affiliations with others, aligns group **ideologies**, at builds solidarity in facing some realities. The desire to resonate with like-minded individuals who embody the same aspirational ideals fuels our social connections, often leading us down paths that validate our self-perceived identities.
 
 ### Identity is cause; brand is effect, and the strength of the former influences the strength of the latter
 
 — Larry Ackerman
 
-## In Action
+## The Intersection
 
-This phenomenon speaks to the profound power of identity-based validation in shaping our actions and decisions. By consistently seeking out groups that align with their preferred archetype, people create a sense of belonging - not just to the group itself, but also to the idealized representation they've chosen to emulate. This process of self-identification and external validation is both alluring and insidious, subtly influencing our thoughts, behaviors, and relationships in ways both profound and far-reaching.
+The intersection of of brand and people is a relationship that in ongoing. The validation phenomenon speaks to the profound power of identity-based validation in shaping our actions and decisions. By consistently seeking out groups that align with their preferred archetype, people create a sense of belonging - not just to the group itself, but also to the idealized representation they've chosen to emulate. This process of self-identification and external validation is both alluring and insidious, subtly influencing our thoughts, behaviors, and relationships in ways both profound and far-reaching.
+
+To understand an audience, as we segment into communities, we look to understand and capture social realities. Sociology uses a combination of tools and methods to better understand interpersonal relationships and translate into applied sociology. When you understand your communities you can more easily bond with your **cult**.
 
 ### A cautionary tale for brands reliant on strong emotional connections with their consumer base
 
