@@ -9,28 +9,22 @@ categories: []
 ---
 ## Identity
 
-Individualism is a myth. It's a developed culture and a well told story but in reality we don't live alone, we don't produce alone, we don't survive alone and in the end we don't make decisions in an individual vacuum. Within a society we belong to different communities and those communities build a sense of belonging. A social creatures we all enjoy **belonging**. Individual identity is not necessarily eradicated, except in radical or extreme cirumstances, but it is influenced by the individual's community and society.
+Individualism is a myth. Developed cultures and well-told stories notwithstanding, we don't live alone, produce alone, or survive alone. We're social creatures who belong to communities that foster a sense of belonging. While individual identity isn't erased in extreme circumstances, it's certainly influenced by community and society.
 
-In the realm of social validation, individuals instinctively gravitate towards idealized representations of themselves, often mirroring the characteristics they aspire to possess. This innate desire for **self-validation** is perpetuated through affinity groups that reinforce their preferred identity archetypes - such as traditionally masculine or feminine personas, artistic or outdoorsy pursuits, or leadership or nonconformity behaviors.
+The desire for self-approval is deeply ingrained in our psyche, driving us toward idealized representations of ourselves. This innate urge for validation is perpetuated through affinity groups reinforcing preferred identity archetypes - traditional gender roles, artistic pursuits, or leadership behaviors. In today's era, this drive extends beyond mere aesthetics to shape relationships and affiliations with others.
 
-In today's era, this psychological drive extends far beyond mere aesthetics. It now deeply influences our relationships and affiliations with others, aligns group **ideologies**, at builds solidarity in facing some realities. The desire to resonate with like-minded individuals who embody the same aspirational ideals fuels our social connections, often leading us down paths that validate our self-perceived identities.
+### Identity is cause; brand is effect
 
-### Identity is cause; brand is effect, and the strength of the former influences the strength of the latter
+Larry Ackerman points out that the strength of our identities influences the strength of our brands. Our self-perceived identities drive us toward groups that embody similar aspirational ideals, fostering social connections that validate these identities.
 
-— Larry Ackerman
+The intersection of identity and people is ongoing. The validation phenomenon highlights the profound impact of identity-based validation on our actions and decisions. By consistently seeking out like-minded groups, individuals create a sense of belonging - not just to the group but also to the idealized representations they've chosen.
 
-## The Intersection
+### Understanding Social Realities
 
-The **intersection** of of brand and people is a relationship that in ongoing. The validation phenomenon speaks to the profound power of identity-based validation in shaping our actions and decisions. By consistently seeking out groups that align with their preferred **archetype**, people create a sense of belonging - not just to the group itself, but also to the idealized representation they've chosen to emulate. This process of self-identification and external validation is both alluring and insidious, subtly influencing our thoughts, behaviors, and relationships in ways both profound and far-reaching.
+To grasp an audience, we focus on understanding their communities and social realities. Sociology employs tools and methods to better comprehend interpersonal relationships and translate them into applied sociology. When you grasp your audience's social realities, you can bond more effectively with them by embracing a shared culture or "cult."
 
-To understand an audience, as we segment into communities, we look to understand and capture **social realities**. Sociology uses a combination of tools and methods to better understand interpersonal relationships and translate into applied sociology. When you understand your communities you can more easily bond with your **cult**.
+### Cautionary Tale for Brand Reliance
 
-### A cautionary tale for brands reliant on strong emotional connections with their consumer base
+Many companies severed ties with the NRA following the Parkland school shooting in 2018. Yeti canceled its vendor relationship due to their strong emotional connection to this group and the brand mythology surrounding it. The company's loyal customer base, which embodies the American outdoorsman archetype, felt threatened by gun-control advocates.
 
-## In Reality
-
-Many companies severed their relationship with the Nation Rifle Association (NRA) after the Parkland, Florida school shooting in February of 2018. Yeti, the cooler company, **canceled** it's vendor relationship. It's mythos built influence among a key demographic: enthusiasts of outdoor recreation such as hunting, fishing, surfing, off-roading, and camping.
-
-The company's loyal customer cult amassed around an aspirational brand mythology centered on rugged individualists who embody the American outdoorsman archetype - much like the NRA's own promotional material for hunting enthusiasts and Second Amendment supporters. However, this idealized "Yeti" steel persona would rust in the **backlash** from gun-control advocates.
-
-The overlap between these two groups created a perfect storm of brand damage. Yeti's carefully crafted mythos was no longer tenable when seen as aligned with an organization that represented the opposing view on gun control. Competitors swiftly seized the opportunity to carve out market share by exploiting this brand **vulnerability**, further exacerbating the erosion of Yeti's value chain.
+The overlap between this demographic and the NRA created a perfect storm of brand damage for Yeti. By exploiting this vulnerability, competitors carved out market share and exacerbated an erosion of Yeti's value chain.
