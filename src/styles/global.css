@@ -91,12 +91,12 @@
   }
   
   .prose h3 {
-    margin-top: 1rem;
-    margin-left: 2rem;
+    margin: 1rem 0rem 1rem 2rem;
     text-indent: 0rem;
     border-left-width: thick;
-    font-size: x-large;
+    font-size:larger;
+    font-weight: 500;
     border-left-color: var(--color-dacRed-900);
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
