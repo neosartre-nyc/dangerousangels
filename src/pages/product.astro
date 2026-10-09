@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/LayoutBlue.astro";
 ---
 
 <html lang="en">
@@ -10,113 +10,115 @@ import Layout from "../layouts/Layout.astro";
     <title>Services</title>
   </head>
   <Layout class="p-10">
-    <section class="bg-dacBlue-900 p-8">
-      <div class="flex flex-row gap-8 flex-wrap">
-        <div
-          class="flex w-full max-w-md items-center gap-2 rounded-lg bg-white p-4"
-        >
-          <img
-            class="h-24 w-24 shrink-0 rounded-full"
-            src="/images/dac-relationships.webp"
-            alt=""
-          />
-
-          <div class="min-w-0 flex-1 space-y-2 text-center">
-            <div class="space-y-0.5">
-              <p class="text-lg font-semibold text-black">
-                Audience Relationships
-              </p>
-              <p class="font-medium text-gray-500">
-                The people with whom meaning is shared
-              </p>
+    <main>
+      <section class="p-8">
+        <div class="flex flex-row gap-8 flex-wrap">
+          <div
+            class="flex w-full max-w-md items-center gap-2 rounded-lg bg-white p-4"
+          >
+            <img
+              class="h-24 w-24 shrink-0 rounded-full"
+              src="/images/dac-relationships.webp"
+              alt=""
+            />
+  
+            <div class="min-w-0 flex-1 space-y-2 text-center">
+              <div class="space-y-0.5">
+                <p class="text-lg font-semibold text-black">
+                  Audience Relationships
+                </p>
+                <p class="font-medium text-gray-500">
+                  The people with whom meaning is shared
+                </p>
+              </div>
+  
+              <button
+                type="button"
+                onclick="window.location.href='/audience'"
+                class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+              >
+                Learn More
+              </button>
             </div>
-
-            <button
-              type="button"
-              onclick="window.location.href='/audience'"
-              class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
-            >
-              Learn More
-            </button>
+          </div>
+  
+          <!-- Card 2: Brand Architecture -->
+          <div
+            class="w-full max-w-md flex items-center gap-2 bg-white rounded-lg p-6"
+          >
+            <!-- Changed to flex for side-by-side layout -->
+            <img
+              class="h-24 rounded-full shrink-0"
+              src="/images/dac-architecture.webp"
+              alt=""
+            />
+            <div class="space-y-2 text-center grow">
+              <div class="space-y-0.5">
+                <p class="text-lg font-semibold text-black">Brand Architecture</p>
+                <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+              </div>
+              <button
+                type="button"
+                onclick="window.location.href='/brand'"
+                class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+              
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <!-- Card 3: Visual Communication -->
+          <div
+            class="flex w-full max-w-md items-center gap-2 bg-white rounded-lg p-6"
+          >
+            <!-- Changed to flex for side-by-side layout -->
+            <img
+              class="h-24 rounded-full shrink-0"
+              src="/images/dac-visual.webp"
+              alt=""
+            />
+            <div class="space-y-2 text-center grow">
+              <div class="space-y-0.5">
+                <p class="text-lg font-semibold text-black">
+                  Visual Communication
+                </p>
+                <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+              </div>
+              <button
+                class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+              
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <!-- Card 4: Resume -->
+          <div
+            class="flex w-full max-w-md items-center gap-2 bg-white rounded-lg p-6"
+          >
+            <!-- Changed to flex for side-by-side layout -->
+            <img
+              class="h-24 rounded-full shrink-0"
+              src="/images/dac-resume.webp"
+              alt=""
+            />
+            <div class="space-y-2 text-center grow">
+              <div class="space-y-0.5">
+                <p class="text-lg font-semibold text-black">Natalie's Résumé</p>
+                <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
+              </div>
+              <button
+                type="button"
+                onclick="window.location.href='/resume'"
+                class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
+              
+              >
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
-
-        <!-- Card 2: Brand Architecture -->
-        <div
-          class="w-full max-w-md flex items-center gap-2 bg-white rounded-lg p-6"
-        >
-          <!-- Changed to flex for side-by-side layout -->
-          <img
-            class="h-24 rounded-full shrink-0"
-            src="/images/dac-architecture.webp"
-            alt=""
-          />
-          <div class="space-y-2 text-center grow">
-            <div class="space-y-0.5">
-              <p class="text-lg font-semibold text-black">Brand Architecture</p>
-              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
-            </div>
-            <button
-              type="button"
-              onclick="window.location.href='/brand'"
-              class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
-            
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-        <!-- Card 3: Visual Communication -->
-        <div
-          class="flex w-full max-w-md items-center gap-2 bg-white rounded-lg p-6"
-        >
-          <!-- Changed to flex for side-by-side layout -->
-          <img
-            class="h-24 rounded-full shrink-0"
-            src="/images/dac-visual.webp"
-            alt=""
-          />
-          <div class="space-y-2 text-center grow">
-            <div class="space-y-0.5">
-              <p class="text-lg font-semibold text-black">
-                Visual Communication
-              </p>
-              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
-            </div>
-            <button
-              class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
-            
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-        <!-- Card 4: Resume -->
-        <div
-          class="flex w-full max-w-md items-center gap-2 bg-white rounded-lg p-6"
-        >
-          <!-- Changed to flex for side-by-side layout -->
-          <img
-            class="h-24 rounded-full shrink-0"
-            src="/images/dac-resume.webp"
-            alt=""
-          />
-          <div class="space-y-2 text-center grow">
-            <div class="space-y-0.5">
-              <p class="text-lg font-semibold text-black">Natalie's Résumé</p>
-              <p class="font-medium text-gray-500">Excepteur voluptate esse</p>
-            </div>
-            <button
-              type="button"
-              onclick="window.location.href='/resume'"
-              class="rounded-xl px-2 py-1 text-white bg bg-dacSage-800 bg hover:hover:scale-110 hover:bg-dacRed-600 hover:text-white active:bg-dacRed-700"
-            
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </Layout>
 </html>
