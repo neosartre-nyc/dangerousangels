@@ -32,5 +32,6 @@
   },
   "devDependencies": {
     "wrangler": "^4.141.0"
-  }
+  },
+  "packageManager": "yarn@4.9.1"
 }
