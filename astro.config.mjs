@@ -5,13 +5,19 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
-
 import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
   integrations: [mdx(), sitemap()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  
+  adapter: cloudflare({  
+    prerenderEnvironment: 'node', // Uses Node during build, workerd at runtime  
+  }),  
 
   fonts: [
     {
@@ -72,9 +78,4 @@ export default defineConfig({
     },
   ], // 👈 Fixed closing bracket for fonts array
 
-  vite: {
-    plugins: [tailwindcss()],
-  },
-
-  adapter: cloudflare(),
 });
