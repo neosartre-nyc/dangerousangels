@@ -1,60 +1,57 @@
 ---
 import "../styles/global.css"
 import Hero from "../components/Hero.astro";
-
-
-// src/components/FixedTimeLoader.astro
 ---
 
-<div id="loader-container" class="w-full h-[80lvh] bg-top flex items-center justify-center bg-gray-900">
+<div id="loader-container" class="relative w-full h-[80lvh] bg-gray-900 overflow-hidden">
 
-    <!-- 1. Video Background -->
-    <!-- Start with the video visible, covering the screen -->
-    <video id="loading-video" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-        <!-- IMPORTANT: Replace this path with your actual video file -->
-        <source src="/video/loading-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Video stays on top initially -->
+  <video
+    id="loading-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
+  >
+    <source src="/video/loading-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    <!-- 2. Content Overlay (Static Content) -->
-    <!-- This will be revealed after the timer finishes -->
+  <!-- Hero starts completely invisible -->
+  <div
+    id="static-content"
+    class="absolute inset-0 z-0 opacity-0 pointer-events-none transition-opacity duration-500"
+  >
     <Hero />
+  </div>
 </div>
 
-
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const video = document.getElementById('loading-video');
-        const staticContent = document.getElementById('static-content');
-        
-        // --- Configuration ---
-        // Define the exact time in milliseconds for the loading screen (e.g., 5 seconds)
-        const loadingDuration = 5000; // <-- ADJUST THIS VALUE
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('loading-video');
+    const staticContent = document.getElementById('static-content');
 
-        // 1. Start the video playback immediately
-        video.play().catch(error => {
-            console.warn("Autoplay failed. Video will not play.");
-        });
+    const loadingDuration = 5000; // adjust as needed
 
-
-        // 2. Set the timeout to trigger the transition
-        setTimeout(() => {
-            // --- Transition Phase ---
-
-            // A. Fade out the video smoothly
-            video.style.opacity = '0';
-
-            // B. Wait for the fade transition (matching the CSS transition duration)
-            setTimeout(() => {
-                // C. Hide the video element completely after fading
-                video.style.display = 'none'; 
-
-                // D. Reveal the static content smoothly
-                staticContent.classList.remove('hidden');
-                staticContent.classList.add('opacity-100');
-            }, 500); // Must match the CSS transition duration (e.g., 500ms)
-
-
-        }, loadingDuration);
+    // Ensure video tries to play
+    video?.play().catch(() => {
+      console.warn("Autoplay failed.");
     });
+
+    setTimeout(() => {
+      // Fade video out
+      video.style.opacity = '0';
+
+      // After the CSS transition finishes…
+      setTimeout(() => {
+        video.style.display = 'none';          // fully remove it
+        video.style.zIndex = '0';
+
+        // Reveal Hero
+        staticContent.classList.remove('opacity-0', 'pointer-events-none');
+        staticContent.classList.add('opacity-100', 'z-10');
+      }, 500); // must match duration-500
+    }, loadingDuration);
+  });
 </script>
