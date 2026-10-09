@@ -20,7 +20,7 @@ Larry Ackerman points out that the strength of our identities influences the str
 
 The intersection of identity and people is ongoing. The validation phenomenon highlights the profound impact of identity-based validation on our actions and decisions. By consistently seeking out like-minded groups, individuals create a sense of belonging - not just to the group but also to the idealized representations they've chosen.
 
-To grasp an audience, we focus on understanding their communities and social realities. Sociology employs tools and methods to better comprehend interpersonal relationships and translate them into applied sociology. When you grasp your audience's social realities, you can bond more effectively with them by embracing a shared cult\(ure).
+To grasp an audience, we focus on understanding their communities and social realities. Sociology employs tools and methods to better comprehend interpersonal relationships and translate them into applied sociology. When you grasp your audience's social realities, you can bond more effectively with them by embracing a shared cult\\(ure).
 
 ## Cautionary Tale for Brand Reliance
 
@@ -34,7 +34,7 @@ At it's core, design solves problems by envisioning the world we want to live, i
 
 Collective sensing is an appraoach which involves listening for capabilities rather than problems during design testing or research efforts. This involves having open-ended sessions, or digital forms of information gathering, where no solutions are allowed, allowing participants to express their concerns and needs.
 
-Eliciting or observing the community gaining an understanding the unwritten rules that govern a social environment, often referred to as social convention becomes a critical design activity. These cult\(ure)-ish rules can either hinder or enable positive change within an organization.
+Eliciting or observing the community gaining an understanding the unwritten rules that govern a social environment, often referred to as social convention becomes a critical design activity. These cult\\(ure)-ish rules can either hinder or enable positive change within an organization.
 
 The outcomes of the work are identifying visible gaps between what people say and do, what people present and what they truly value, encouraging critical thinking about the diagnoses provided by experts, and fostering social innovation through skills training.
 
