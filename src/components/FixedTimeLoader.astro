@@ -32,7 +32,7 @@ import Hero from "../components/Hero.astro";
     const video = document.getElementById('loading-video');
     const staticContent = document.getElementById('static-content');
 
-    const loadingDuration = 4250; // adjust as needed
+    const loadingDuration = 4700; // adjust as needed
 
     // Ensure video tries to play
     video?.play().catch(() => {
@@ -51,7 +51,7 @@ import Hero from "../components/Hero.astro";
         // Reveal Hero
         staticContent.classList.remove('opacity-0', 'pointer-events-none');
         staticContent.classList.add('opacity-100', 'z-10');
-      }, 425); // must match duration-500
+      }, 500); // must match duration-500
     }, loadingDuration);
   });
 </script>
