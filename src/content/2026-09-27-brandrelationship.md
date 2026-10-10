@@ -7,7 +7,7 @@ draft: false
 tags: [brand]
 categories: []
 ---
-## Brand Strategy and World Building
+## Brand Strategy and World-Building
 
 Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact when audiences lose trust in companies across various sizes and reputations.
 
@@ -37,11 +37,11 @@ Traditional branding was about recognition. However, today's audiences crave imm
 
 A company's conceptual universe forms before the design of visuals, experiences, or elements for relationship building. The world, where culture, entertainment, and experience intersect, is where audiences gain real identity, community, and connection through shared cultural experiences. World-building translates brand strategy into environment, ideas into elements, and opportunity into engagement.
 
-Through interaction with themes, brand and audience co-create this world as people move through, remix, share content, and transform it into culture.
+Through interaction with themes, brand and audience co-create the world and mythos as people move through, remix, share content, and transform it into culture.
 
 ### Branding was once about recognition — what is replacing it is far more immersive and demanding — Jeremy Hodges
 
-Mythology emerges from this shared culture. It layers upon semiotics, transforming literal language into ideology, making cultural constructs seem natural. Roland Barthes wrote an essay in 1957 comparing the new (at the time) Citroën car to a modern Gothic cathedral—an object crafted to be consumed as a magical, sacred masterpiece of divine creation rather than an industrial machine. When companies fuel their own mythos, interest expands because grand feats outshine fact sheets.
+Mythology emerges from this shared culture. It layers upon semiotics, transforming literal language into ideology, making cultural constructs seem natural. Roland Barthes wrote an essay in 1957 comparing the new (at the time) Citroën car to a modern Gothic cathedral—an object crafted to be consumed as a magical, sacred masterpiece of divine creation rather than an industrial machine. We see that a lot with automobiles. When companies fuel their own mythos, interest expands because grand feats outshine fact sheets.
 
 Over time, creative work becomes easier since it's not about following style rules but whether communication ideas fit within the context of the world.
 
@@ -49,4 +49,4 @@ Over time, creative work becomes easier since it's not about following style rul
 
 World-building and mythos are key components in creating an immersive brand experience.
 
-Companies need to support a shared cultural universe and co-create with their audience through meaningful stories, interactions, and experiences, turning relationships into trust. If your company can build this kind of connection with your audience, you have the foundation for building strong bonds that will outlast fleeting recognition or marketing campaigns.
+Companies need to support a shared cultural universe and co-create with their audience through meaningful stories, interactions, and experiences, turning relationships into trust. If your company can build this kind of connection with your audience, you have the foundation for building strong bonds that will outlast fleeting recognition advertising or marketing campaigns.

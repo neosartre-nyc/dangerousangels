@@ -30,14 +30,16 @@ This dynamic created a critical vulnerability for Yeti. The demographic overlap 
 
 ## Social Adoption
 
-At it's core, design solves problems by envisioning the world we want to live, identifying the obstacles, and closing the gap. The changes required in communities and organizations have an ongoing transformation failure rate of, the often cited by Harvard, 70%. Transformation is difficult, but thehigh rate may be due to the fact that the same approach is repeatedly prescribed without considering how it interacts with the social environment, the hidden rules, and mythologies.
+At it's core, design solves problems by envisioning the world we want to live, identifying the obstacles, and closing the gap. The changes required in communities and organizations have an ongoing transformation failure rate of, the often cited by Harvard, 70%. Transformation is difficult, but the high rate may be due to the fact that the same approach is repeatedly prescribed without considering how it interacts with the social environment, the hidden rules, and mythologies.
 
-Collective sensing is an appraoach which involves listening for capabilities rather than problems during design testing or research efforts. This involves having open-ended sessions, or digital forms of information gathering, where no solutions are allowed, allowing participants to express their concerns and needs.
+Collective sensing is an approach which involves listening for capabilities rather than problems during design testing or research efforts. This involves having open-ended sessions, or digital forms of information gathering, where no solutions are allowed, allowing participants to express their concerns and needs.
 
-Eliciting or observing the community gaining an understanding the unwritten rules that govern a social environment, often referred to as social convention becomes a critical design activity. These cult\\(ure)-ish rules can either hinder or enable positive change within an organization.
+Eliciting or observing the community gaining an understanding the unwritten rules that govern a social environment, often referred to as social convention, becomes a critical design activity. These cult\\(ure)-ish rules can either hinder or help positive change within relationship building.
 
 The outcomes of the work are identifying visible gaps between what people say and do, what people present and what they truly value, encouraging critical thinking about the diagnoses provided by experts, and fostering social innovation through skills training.
 
 ### If you want a better answer, ask a different question — Natalie Reuchlein
 
 Successful transformation begins with changing the story driving the design solution, moving away from a focus on problems and solutions to one of capabilities and opportunities.
+
+Don't forget to solve the problems along the way!
