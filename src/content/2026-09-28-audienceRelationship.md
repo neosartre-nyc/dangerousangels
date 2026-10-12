@@ -30,7 +30,7 @@ This dynamic created a critical vulnerability for Yeti. The demographic overlap 
 
 ## Social Adoption
 
-At it's core, design solves problems by envisioning the world we want to live, identifying the obstacles, and closing the gap. The changes required in communities and organizations have an ongoing transformation failure rate of, the often cited by Harvard, 70%. Transformation is difficult, but the high rate may be due to the fact that the same approach is repeatedly prescribed without considering how it interacts with the social environment, the hidden rules, and mythologies.
+At it's core, design aspires to solve problems by envisioning the world we want to live, identifying the obstacles, and closing the gap. The changes required in communities and organizations have an ongoing transformation failure rate of, the often cited by Harvard, 70%. Transformation is difficult, but the high rate may be due to the fact that the same approach is repeatedly prescribed without considering how it interacts with the social environment, the hidden rules, and mythologies.
 
 Collective sensing is an approach which involves listening for capabilities rather than problems during design testing or research efforts. This involves having open-ended sessions, or digital forms of information gathering, where no solutions are allowed, allowing participants to express their concerns and needs.
 

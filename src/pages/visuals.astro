@@ -1,5 +1,6 @@
 ---
-import "../styles/global.css";
+import * as Content from "../content/2026-10-11-visualcommunication.md";
+const compiled = await Content.compiledContent();
 import Layout from "../layouts/LayoutFish.astro";
 ---
 
@@ -9,11 +10,22 @@ import Layout from "../layouts/LayoutFish.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visuals</title>
   </head>
-  <Layout>
-    <div class="my-52 mx-24">
-      <h1 class="text-2xl font-serif text-white">
-        It's in my head and I promise I'll make time — Think you have to make the audience the hero of their own stories
-      </h1>
-    </div>
-  </Layout>
+  <body>
+    <Layout>
+      <section class="py-8 px-8 md:px-16 lg:px-20 xl:px-40 text-white">
+        <h1 class="font-serif text-3xl">{Content.frontmatter.title}</h1>
+        <div class="prose leading-relaxed">
+          <Fragment set:html={compiled} />
+        </div>
+      </section>
+      <div class="mb-5 flex justify-center">
+        <button
+          type="button"
+          class="px-6 py-4 rounded-xl bg-dacSage-400 text-white text-2xl hover:bg-dacRed-800"
+          onclick="window.location.href='/sociology'"
+          >The Sociology Of Design</button
+        >
+      </div>
+    </Layout>
+  </body>
 </html>
