@@ -9,7 +9,7 @@ categories: []
 ---
 ## Brand Strategy and World-Building
 
-Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact when audiences lose trust in companies across various sizes and reputations.
+We define Brand as a symbolic representation of an organization, community or culture that distinguishes it from others through values, products, services, experiences, relationships or distinctive characteristics that create emotional connections with consumers, stakeholders and members. Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact as audiences lose trust in brand entities across various sizes and reputations.
 
 ## What Kind of Friend Would Your Brand Be?
 
@@ -49,4 +49,4 @@ Over time, creative work becomes easier since it's not about following style rul
 
 World-building and mythos are key components in creating an immersive brand experience.
 
-Companies need to support a shared cultural universe and co-create with their audience through meaningful stories, interactions, and experiences, turning relationships into trust. If your company can build this kind of connection with your audience, you have the foundation for building strong bonds that will outlast fleeting recognition advertising or marketing campaigns.
+Companies need to support a shared cultural universe and co-create with their audience through meaningful stories, interactions, and experiences, turning relationships into trust. If your company can build this kind of connection with your audience, you have the foundation for building strong bonds that will outlast the recognition of competing and fleeting advertising or marketing campaigns.
