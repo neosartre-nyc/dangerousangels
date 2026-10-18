@@ -8,10 +8,10 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "yarn run build && wrangler dev",
+    "preview": "npm run build && wrangler dev",
     "astro": "astro",
     "generate-types": "wrangler types",
-    "deploy": "yarn run build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.3.4",
@@ -22,6 +22,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.8",
     "clipboard": "^2.0.11",
+    "rehype-mermaid": "^3.0.0",
     "sharp": "^0.35.0",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.4"
