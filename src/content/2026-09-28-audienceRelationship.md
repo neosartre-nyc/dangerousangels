@@ -38,7 +38,7 @@ Eliciting or observing the community gaining an understanding the unwritten rule
 
 The outcomes of the work are identifying visible gaps between what people say and do, what people present and what they truly value, encouraging critical thinking about the diagnoses provided by experts, and fostering social innovation through skills training.
 
-### If you want a better answer, ask a different question — Natalie Reuchlein
+##### If you want a better answer, ask a different question — Natalie Reuchlein
 
 Successful transformation begins with changing the story driving the design solution, moving away from a focus on problems and solutions to one of capabilities and opportunities.
 

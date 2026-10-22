@@ -9,7 +9,7 @@ categories: []
 ---
 ## Brand Strategy and World-Building
 
-We define Brand as a symbolic representation of an organization, community or culture that distinguishes it from others through values, products, services, experiences, relationships or distinctive characteristics that create emotional connections with consumers, stakeholders and members. Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact as audiences lose trust in brand entities across various sizes and reputations.
+We define Brand as a symbolic representation of an organization, community or culture that distinguishes it from others through values, products, services, experiences, relationships or distinctive characteristics that create emotional connections with consumers, stakeholders and/or members. Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact as audiences lose trust in brand entities across various sizes and reputations.
 
 ## What Kind of Friend Would Your Brand Be?
 
@@ -27,7 +27,7 @@ Most wouldn't. Yet many consumers do business with companies that engage in thes
 
 Companies create customers through innovating products and marketing stories that sell them. Today, we also prioritize audience primacy — recognizing valued relationships. Companies add psychological value by supporting audience identity, feelings, and a sense of belonging.
 
-### ...the customers create the brand - Marty Neumeier
+##### ...the customers create the brand - Marty Neumeier
 
 ## From Recognition to Immersive Experiences
 
@@ -39,7 +39,7 @@ A company's conceptual universe forms before the design of visuals, experiences,
 
 Through interaction with themes, brand and audience co-create the world and mythos as people move through, remix, share content, and transform it into culture.
 
-### Branding was once about recognition — what is replacing it is far more immersive and demanding — Jeremy Hodges
+##### Branding was once about recognition — what is replacing it is far more immersive and demanding — Jeremy Hodges
 
 Mythology emerges from this shared culture. It layers upon semiotics, transforming literal language into ideology, making cultural constructs seem natural. Roland Barthes wrote an essay in 1957 comparing the new (at the time) Citroën car to a modern Gothic cathedral—an object crafted to be consumed as a magical, sacred masterpiece of divine creation rather than an industrial machine. We see that a lot with automobiles. When companies fuel their own mythos, interest expands because grand feats outshine fact sheets.
 

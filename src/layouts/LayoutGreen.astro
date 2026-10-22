@@ -1,0 +1,26 @@
+---
+import NavigationMenu from "../components/NavigationMenu.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head> </head>
+  <body class="max-h-[80]dvh flex flex-col bg-dacSage-700">
+    <NavigationMenu fixed />
+    <main>
+      <article>
+        <div>
+          <div class="title">
+            <h1>{title}</h1>
+            <hr />
+          </div>
+          <slot />
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
