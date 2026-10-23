@@ -1,6 +1,8 @@
 ---
+import * as Content from "../content/2026-10-23-sociologyOfDesign.md";
+const compiled = await Content.compiledContent();
 import "../styles/global.css";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/LayoutBlue.astro";
 ---
 
 <html lang="en">
@@ -9,11 +11,14 @@ import Layout from "../layouts/Layout.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sociology</title>
   </head>
-  <Layout>
-    <div class="my-52 mx-24">
-      <h1 class="text-2xl font-serif text-dacBlue-800">
-        More to come and will include ethnography and digital ethnography
-      </h1>
-    </div>
-  </Layout>
+    <body>
+    <Layout>
+      <section class="py-8 px-8 text-white md:px-16 lg:px-20 xl:px-40">
+        <h1 class="font-serif text-3xl">{Content.frontmatter.title}</h1>
+        <div class="prose leading-relaxed">
+          <Fragment set:html={compiled} />
+        </div>
+      </section>
+    </Layout>
+  </body>
 </html>
