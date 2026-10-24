@@ -10,8 +10,8 @@ import Layout from "../layouts/LayoutBlue.astro";
     <title>Services</title>
   </head>
   <Layout class="p-10">
-    <main>
-      <section class="p-8">
+    <body>
+      <section class="p-8 h-[dvh]">
         <div class="flex flex-row gap-8 flex-wrap">
           <div
             class="flex w-full max-w-md items-center gap-2 rounded-lg bg-white p-4"
@@ -31,7 +31,6 @@ import Layout from "../layouts/LayoutBlue.astro";
                   The people with whom meaning is shared
                 </p>
               </div>
-  
               <button
                 type="button"
                 onclick="window.location.href='/audience'"
@@ -41,7 +40,6 @@ import Layout from "../layouts/LayoutBlue.astro";
               </button>
             </div>
           </div>
-  
           <!-- Card 2: Brand Architecture -->
           <div
             class="w-full max-w-md flex items-center gap-2 bg-white rounded-lg p-6"
@@ -120,6 +118,6 @@ import Layout from "../layouts/LayoutBlue.astro";
           </div>
         </div>
       </section>
-    </main>
+    </body>
   </Layout>
 </html>

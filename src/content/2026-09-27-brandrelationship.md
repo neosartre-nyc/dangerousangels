@@ -9,7 +9,9 @@ categories: []
 ---
 ## Brand Strategy and World-Building
 
-We define Brand as a symbolic representation of an organization, community or culture that distinguishes it from others through values, products, services, experiences, relationships or distinctive characteristics that create emotional connections with consumers, stakeholders and/or members. Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact as audiences lose trust in brand entities across various sizes and reputations.
+We define the termBrand as a symbolic representation of an organization, community or culture that distinguishes it from others through values, products, services, experiences, relationships or distinctive characteristics that create emotional connections with consumers, stakeholders and/or members. Brands build relationships through authenticity and meaningful storytelling. One-way communications can lose impact as audiences lose trust in brand entities across various sizes and reputations.
+
+##### Branding is a social practice: it creates meaning, organizes belonging , and structures relationships.
 
 ## What Kind of Friend Would Your Brand Be?
 
