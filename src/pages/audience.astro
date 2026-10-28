@@ -3,14 +3,6 @@ import * as Content from "../content/2026-09-28-audienceRelationship.md";
 const compiled = await Content.compiledContent();
 import Layout from "../layouts/Layout.astro";
 ---
-
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audience Relationships</title>
-  </head>
-  <body>
     <Layout>
       <section class="py-8 px-8 md:px-16 lg:px-20 xl:px-40">
         <h1 class="font-serif text-3xl">{Content.frontmatter.title}</h1>
@@ -27,5 +19,3 @@ import Layout from "../layouts/Layout.astro";
         >
       </div>
     </Layout>
-  </body>
-</html>
