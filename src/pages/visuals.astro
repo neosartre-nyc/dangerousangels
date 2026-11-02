@@ -1,10 +1,10 @@
 ---
 import * as Content from "../content/2026-10-11-visualcommunication.md";
 const compiled = await Content.compiledContent();
-import Layout from "../layouts/LayoutFish.astro";
+import Layout from "../layouts/Layout.astro";
 ---
     <Layout>
-      <section class="py-8 px-8 md:px-16 lg:px-20 xl:px-40 text-white">
+      <section class="py-8 px-8 md:px-16 lg:px-20 xl:px-40">
         <h1 class="font-serif text-3xl">{Content.frontmatter.title}</h1>
         <div class="prose leading-relaxed">
           <Fragment set:html={compiled} />
