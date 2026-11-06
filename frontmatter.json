@@ -8,6 +8,14 @@
     {
       "title": "blog",
       "path": "[[workspace]]/src/content/blog"
+    },
+    {
+      "title": "ecology",
+      "path": "[[workspace]]/src/content/presentations/ecology"
+    },
+    {
+      "title": "sociology",
+      "path": "[[workspace]]/src/content/presentations/sociology"
     }
   ],
   "frontMatter.content.publicFolder": {
