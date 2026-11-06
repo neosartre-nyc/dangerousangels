@@ -37,6 +37,11 @@
 }
 
 @theme {
+  --font-sans: "QuaySans", sans-serif;
+  --font-serif: "Merriweather", serif;
+}
+
+@theme {
   --animate-fade-in: fadeIn .8s ease-out forwards;
 
   @keyframes fadeIn {
@@ -50,11 +55,6 @@
       transform: translateY(0);
     }
   }
-}
-
-@theme {
-  --font-sans: "QuaySans", sans-serif;
-  --font-serif: "Merriweather", serif;
 }
 
 

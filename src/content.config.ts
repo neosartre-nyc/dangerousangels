@@ -16,5 +16,21 @@ const blog = defineCollection({
 			heroImage: z.optional(image()),
 		}),
 });
+const presentations = defineCollection({
+	// Load Astro files in the `src/content/blog/` directory.
+	loader: glob({ base: './src/content/presentations', pattern: '**/*.{astro}' }),
+	// Type-check frontmatter using a schema
+	schema: ({ image }) =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			// Transform string to Date object
+			date: z.coerce.date(),
+			updatedDate: z.coerce.date().optional(),
+			heroImage: z.optional(image()),
+		}),
+});
 
-export const collections = { blog };
+
+export const collections = { blog, presentations };
+
