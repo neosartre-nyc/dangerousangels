@@ -6,10 +6,6 @@
       "path": "[[workspace]]/src/content"
     },
     {
-      "title": "blog",
-      "path": "[[workspace]]/src/content/blog"
-    },
-    {
       "title": "ecology",
       "path": "[[workspace]]/src/content/presentations/ecology"
     },
