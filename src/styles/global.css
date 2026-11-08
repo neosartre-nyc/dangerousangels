@@ -85,13 +85,13 @@
   .prose h2 {
     text-indent: 0rem;
     font-weight: 500;
-    font-size: x-large;
+    font-size: xx-large;
     padding-top: 1rem;
     padding-bottom: .5rem;
   }
   .prose h3 {
     text-indent: 0rem;
-    font-weight: 400;
+    font-weight: 300;
     font-size: x-large;
     padding-top: 1rem;
     padding-bottom: .5rem;
@@ -113,4 +113,24 @@
     padding-top: 1rem;
     padding-bottom: .5rem;
   }
+}
+/* Scope it so menus/nav stay clean */
+.prose ul,
+.markdown-content ul,
+article ul,
+.content ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-inline-start: 1.5rem;   /* or 2rem */
+  margin: 1em 0;
+}
+
+.prose ol,
+.markdown-content ol,
+article ol,
+.content ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-inline-start: 1.5rem;
+  margin: 1em 0;
 }

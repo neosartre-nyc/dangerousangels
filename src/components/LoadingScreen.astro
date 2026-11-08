@@ -1,0 +1,81 @@
+---
+import "../styles/global.css"
+import Hero from "../components/Hero.astro";
+---
+
+<div id="loader-container" class="relative w-full h-[80lvh] bg-dacBlue-950 overflow-hidden">
+
+  <!-- Video stays on top initially -->
+  <video
+    id="loading-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-10 transition-opacity duration-500"
+  >
+    <source src="/video/loading-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero starts completely invisible -->
+  <div
+    id="static-content"
+    class="absolute inset-0 z-0 opacity-0 pointer-events-auto transition-opacity duration-500"
+  >
+    <Hero />
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('loading-video');
+    const staticContent = document.getElementById('static-content');
+
+    let triggered = false; // Prevents race conditions & double-fires
+
+    const completeLoading = () => {
+      if (triggered || !video || !staticContent) return;
+      triggered = true;
+
+      // Pause & fade out video (works for both natural end & manual bypass)
+      if (video) {
+        video.pause();
+        video.style.opacity = '0'; // Starts CSS transition
+      }
+
+      // Wait for CSS transition to finish before revealing hero
+      setTimeout(() => {
+        if (video) {
+          video.style.display = 'none';
+          video.style.zIndex = '0';
+        }
+
+        if (staticContent) {
+          staticContent.classList.remove('opacity-0', 'pointer-events-none');
+          staticContent.classList.add('opacity-100', 'z-10');
+        }
+
+        // Clean up all listeners after transition completes
+        document.removeEventListener('click', completeLoading);
+        document.removeEventListener('keydown', completeLoading);
+        video?.removeEventListener('ended', completeLoading);
+      }, 500); // ⚠️ Must match your CSS `duration-500` exactly
+    };
+
+    // 1️⃣ PRIMARY TRIGGER: When video finishes playing naturally
+    video?.addEventListener('ended', completeLoading);
+
+    // 2️⃣ MANUAL TRIGGER: Click or keyboard bypass
+    document.addEventListener('click', completeLoading);
+    document.addEventListener('keydown', completeLoading);
+
+    // 3️⃣ Start video (browsers may block autoplay, so we handle it gracefully)
+    video?.play().catch(() => {
+      console.warn("Autoplay failed. Video will wait for user interaction.");
+    });
+
+    // 4️⃣ Fallback timeout (in case video never ends or autoplay is permanently blocked)
+    setTimeout(() => completeLoading(), 4700);
+  });
+</script>
