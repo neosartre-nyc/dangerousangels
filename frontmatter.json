@@ -2,8 +2,8 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/src/content"
+      "title": "story",
+      "path": "[[workspace]]/src/content/story/"
     },
     {
       "title": "ecology",
@@ -12,7 +12,7 @@
     {
       "title": "sociology",
       "path": "[[workspace]]/src/content/presentations/sociology"
-    }
+    },
   ],
   "frontMatter.content.publicFolder": {
     "path": "src/assets",
@@ -21,7 +21,7 @@
   "frontMatter.git.enabled": true,
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
+      "name": "current",
       "previewPath": null,
       "pageBundle": false,
       "fields": [
@@ -71,5 +71,5 @@
         }
       ]
     }
-  ],
+  ]
 }

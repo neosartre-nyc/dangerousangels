@@ -1,9 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import LoadingScreen from "../components/LoadingScreen.astro";
+import Button from "../components/PairButton.astro"
 import { getCollection, render } from "astro:content"
 
-const posts = await getCollection('story'); // ← change to your real collection name
+const posts = (await getCollection('story')).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
 
 const renderedPosts = await Promise.all(
   posts.map(async (post) => {
@@ -23,17 +26,20 @@ const renderedPosts = await Promise.all(
     <section id="hero" class="snap-section relative min-h-screen">
       <LoadingScreen />
       <div class="mt-24 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8" >
-        <hr class="mt-12 border-t border-dacRed-600" />
+        <hr class="mt-14 border-t border-dacRed-600" />
       </div>
 
     </section>
   </div>
   <div class="space-y-16">
-    <!-- Section 2: Story -->
+    <!-- Section 2: Story Posts -->
     <section id="story" class="snap-section relative min-h-screen">
       {renderedPosts.map(({ data, Content },index) => (
         <article class="prose !prose-invert mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 mb-16">
           <Content />
+          <div class="pt-4">
+          <Button />
+          </div>
           {index < renderedPosts.length - 1 && (
         <hr class="mt-12 border-t border-dacRed-600" />
       )}

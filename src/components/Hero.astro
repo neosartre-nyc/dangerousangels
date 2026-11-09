@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Button from "../components/PairButton.astro"
 ---
 
 <html lang="en">
@@ -13,7 +14,7 @@ import "../styles/global.css";
     style=`background-image: url('/images/dac-angels.webp')`
   >
     <section
-      class="animate-fade-in [animation-delay:5s] [animation-fill-mode:backwards] pt-28 px-10 md:px-20 lg:px-44 not-last:bg-transparent text-center text-dacSage-50 animate-delayed-7s text-shadow-lg  text-shadow-dacSage-950"
+      class="animate-fade-in [animation-delay:3s] [animation-fill-mode:backwards] pt-28 px-10 md:px-20 lg:px-44 not-last:bg-transparent text-center text-dacSage-50 animate-delayed-7s text-shadow-lg  text-shadow-dacSage-950"
     >
       <h1
         class="font-serif  text-2xl md:text-4xl lg:text-6xl xl:8xl pb-4"
@@ -28,21 +29,24 @@ import "../styles/global.css";
             <li>Institute substantiated, adaptable, flexible user-centered guidelines.</li>
           </ul>
         </div>
-      <div class="absolute inset-x-0 bottom-2 flex gap-4 justify-center">
-            <button
-            type="button"
-            class="px-10 md:px-20 py-4 rounded-xl bg-dacSage-800 text-white text-1xl hover:scale-110 hover:bg-dacRed-800"
-            onclick="window.location.href='/product'"
-            >Services
-          </button>            
-            <button
-            type="button"
-            class="px-10 md:px-20 py-4 rounded-xl bg-dacBlue-800 text-white text-1xl hover:scale-110 hover:bg-dacRed-800"
-            onclick="window.location.href='/sociology'"
-            >Cult\(ure)
-          </button>            
-          </div>
+    </section>
+    <section class="absolute inset-x-0 bottom-2 flex gap-4 justify-center">
+      <Button />
     </section>
   </div>
 
 </html>
+
+<script>
+  const button = document.getElementById('book-now');
+  
+  button.addEventListener('click', () => {
+    const url = 'https://calendar.proton.me/bookings#VEwY-mViucEDbgPhbzRaDCcZRsWnPwskpR42Pfs9EaA=';
+    const windowFeatures = 'width=600,height=700,resizable=yes,scrollbars=yes';
+    
+    window.open(url, 'ProtonBooking', windowFeatures);
+  });
+</script>
+
+
+
