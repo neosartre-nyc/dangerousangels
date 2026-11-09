@@ -1,3 +1,23 @@
 {
-  "src": {}
+  "src": {
+    "assets": {
+      "images": {
+        "bill.png": {
+          "alt": "",
+          "caption": "",
+          "title": "testimonial"
+        },
+        "jon.png": {
+          "alt": "",
+          "caption": "",
+          "title": "testimonial"
+        },
+        "ryan.png": {
+          "alt": "",
+          "caption": "",
+          "title": "testimonial"
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,62 @@
+---
+title: social
+description: ""
+pubDate: 2026-11-09T17:06:58.816Z
+preview: ""
+draft: true
+tags: []
+categories: []
+fmContentType: current
+---
+import { Image } from 'astro:assets';
+import bill from '../../assets/images/bill.png'
+import jon from '../../assets/images/jon.png'
+import ryan from '../../assets/images/ryan.png'
+
+export default function Component() {
+  return (
+    <>
+      <h2>No matter how good we may think we are, we are really only as good as other people think we are</h2>
+      <h5>We think we are good because we don't stop with people, process, and tools when it comes to business transformation. We include the ecology of politics, power, and hidden rules</h5>
+
+      <table>
+        <thead>
+          <tr>
+            <th align="center">
+              <Image src={bill} alt="bill" width={200} height={200} />
+            </th>
+            <th align="center">
+              <Image src={jon} alt="jon" width={200} height={200} />
+            </th>
+            <th align="center">
+              <Image src={ryan} alt="ryan" width={200} height={200} />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">Bill Selles</td>
+            <td align="center">Jon Bostrom</td>
+            <td align="center">Ryan McClung</td>
+          </tr>
+          <tr>
+            <td align="center">SVP/GM</td>
+            <td align="center">Semi Retired</td>
+            <td align="center">Brand Strategist</td>
+          </tr>
+          <tr>
+            <td align="left">
+              "You’ve never been conventional, which is part of your brilliance"
+            </td>
+            <td align="left">
+              "I found Natalie to be informed and insightful when dealing with complex projects. She continually impressed our customer/partners and helped influence successful project outcomes."
+            </td>
+            <td align="left">
+              "You're a gifted communicator, and I very much enjoyed watching your reflection video."
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  );
+}
