@@ -1,34 +1,27 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "astro",
+  "frontMatter.preview.host": "http://localhost:4321",
+  "frontMatter.content.publicFolder": "public",
   "frontMatter.content.pageFolders": [
     {
-      "title": "story",
-      "path": "[[workspace]]/src/content/story/"
-    },
-    {
-      "title": "ecology",
-      "path": "[[workspace]]/src/content/presentations/ecology"
-    },
-    {
-      "title": "sociology",
-      "path": "[[workspace]]/src/content/presentations/sociology"
-    },
+      "title": "blog",
+      "path": "[[workspace]]/src/content/blog"
+    }
   ],
-  "frontMatter.content.publicFolder": {
-    "path": "src/assets",
-    "relative": true
-  },
-  "frontMatter.git.enabled": true,
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "current",
-      "previewPath": null,
+      "name": "default",
       "pageBundle": false,
+      "previewPath": "'blog'",
+      "filePrefix": null,
+      "clearEmpty": true,
       "fields": [
         {
           "title": "Title",
           "name": "title",
-          "type": "string"
+          "type": "string",
+          "single": true
         },
         {
           "title": "Description",
@@ -37,37 +30,16 @@
         },
         {
           "title": "Publishing date",
-          "name": "date",
-          "type": "pubDate",
+          "name": "pubDate",
+          "type": "datetime",
           "default": "{{now}}",
           "isPublishDate": true
         },
         {
-          "title": "Updated date",
-          "name": "date",
-          "type": "updatedDate",
-          "default": "{{now}}",
-          "isUpdatedDate": true
-        },
-        {
-          "title": "Article preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "title": "Content preview",
+          "name": "heroImage",
+          "type": "image",
+          "isPreviewImage": true
         }
       ]
     }
