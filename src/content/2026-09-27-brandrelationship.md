@@ -1,11 +1,7 @@
 ---
 title: Brand Architecture
 description: ""
-date: 2026-09-27T15:45:55.257Z
-preview: ""
-draft: false
-tags: [brand]
-categories: []
+pubDate: 2026-09-27
 ---
 ## Brand Strategy and World-Building
 

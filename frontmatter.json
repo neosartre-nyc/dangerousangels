@@ -2,15 +2,22 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.framework.id": "astro",
   "frontMatter.preview.host": "http://localhost:4321",
-  "frontMatter.content.publicFolder": "public",
-  "frontMatter.content.pageFolders": [],
+  "frontMatter.content.publicFolder": {
+    "path": "src/assets",
+    "relative": true
+  },
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "story",
+      "path": "[[workspace]]/src/content/story"
+    }
+  ],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
       "pageBundle": false,
       "previewPath": "'blog'",
       "filePrefix": null,
-      "clearEmpty": true,
       "fields": [
         {
           "title": "Title",
@@ -31,6 +38,12 @@
           "isPublishDate": true
         },
         {
+          "title": "Draft",
+          "name": "draft",
+          "type": "boolean",
+          "default": true
+        },
+        {
           "title": "Content preview",
           "name": "heroImage",
           "type": "image",
@@ -38,5 +51,6 @@
         }
       ]
     }
-  ]
+  ],
+  "frontMatter.git.enabled": true
 }

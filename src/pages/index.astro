@@ -4,10 +4,9 @@ import LoadingScreen from "../components/LoadingScreen.astro";
 import Button from "../components/PairButton.astro"
 import { getCollection, render } from "astro:content"
 
-const posts = (await getCollection('story'))
+const posts = [...await getCollection('story')]
   .filter(({ data }) => data.draft !== true)
   .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
-
 
 const renderedPosts = await Promise.all(
   posts.map(async (post) => {

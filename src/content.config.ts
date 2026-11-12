@@ -10,9 +10,9 @@ const story = defineCollection({
 		z.object({
 			title: z.string(),
 			description: z.string(),
-			draft: z.boolean(),
 			// Transform string to Date object
 			pubDate: z.coerce.date(),
+			draft: z.boolean(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
 		}),

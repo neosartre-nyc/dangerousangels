@@ -1,11 +1,7 @@
 ---
 title: Audience Relationships
 description: "The intersection of brand and people"
-date: 2026-09-28T13:01:48.370Z
-preview: ""
-draft: false
-tags: [audience]
-categories: []
+pubDate: 2026-09-28
 ---
 
 ## Identity

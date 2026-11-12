@@ -1,11 +1,7 @@
 ---
 title: The Sociology Of Design
 description: ""
-date: 2026-10-23T00:44:58.654Z
-preview: ""
-draft: false
-tags: []
-categories: []
+pubDate: 2026-10-23
 ---
 ## Meaning, Identity, and Social Relations
 

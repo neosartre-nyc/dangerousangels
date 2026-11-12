@@ -1,11 +1,7 @@
 ---
 title: Visual Communication
 description: ""
-date: 2026-10-11T23:42:17.767Z
-preview: ""
-draft: false
-tags: []
-categories: []
+pubDate: 2026-10-11
 ---
 ## Expert Design Analysis for Human Experience
 <!--markdownlint-disable-file MD001-->
