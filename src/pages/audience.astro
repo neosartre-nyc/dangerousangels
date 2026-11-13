@@ -3,8 +3,8 @@ import * as Content from "../content/2026-09-28-audienceRelationship.md";
 const compiled = await Content.compiledContent();
 import Layout from "../layouts/Layout.astro";
 ---
-    <Layout title="Audience" theme="default">
-      <section class="py-8 px-8 md:px-16 lg:px-20 xl:px-40">
+    <Layout title="Audience">
+      <section class=mx-auto max-w-7xl "py-8 px-8 md:px-16 lg:px-20 xl:px-40">
         <h1 class="font-serif text-3xl">{Content.frontmatter.title}</h1>
         <div class="prose leading-relaxed">
           <Fragment set:html={compiled} />

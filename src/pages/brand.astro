@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 <main class="bg-dacBlue-900 text-white">
     <Layout>
-        <section class="py-8 px-8 md:px-16 lg:px-20 xl:px-40">
+        <section class="mx-auto max-w-7xl py-8 px-8 md:px-16 lg:px-20 xl:px-40">
           <h1 class="font-serif text-3xl">{Content.frontmatter.title}</h1>
           <div class="prose leading-relaxed">
             <Fragment set:html={compiled} />
