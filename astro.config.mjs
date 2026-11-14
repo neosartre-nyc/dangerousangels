@@ -1,32 +1,32 @@
 // @ts-check
 
+import cloudflare from '@astrojs/cloudflare';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import { defineConfig, fontProviders } from 'astro/config';
-import rehypeMermaid from 'rehype-mermaid';
-
 import tailwindcss from '@tailwindcss/vite';
-import cloudflare from '@astrojs/cloudflare';
+import { defineConfig, fontProviders } from 'astro/config';
+import d2 from 'astro-d2';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [mdx(), sitemap()],
+
+  integrations: [mdx(), sitemap(), d2()],
+
+  markdown: {
+    syntaxHighlight: {
+      type: 'shiki',
+      excludeLangs: ['d2', 'math'],
+    },
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
 
-   markdown: {
-    syntaxHighlight: {
-      type: 'shiki',
-      excludeLangs: ['mermaid', 'math'],
-    },
-    rehypePlugins: [rehypeMermaid],
-  },
-  
-  adapter: cloudflare({  
-    prerenderEnvironment: 'node', // Uses Node during build, workerd at runtime  
-  }),  
+  adapter: cloudflare({
+    // Run prerendering in Node; use Cloudflare's runtime at deployment.
+    prerenderEnvironment: 'node',
+  }),
 
   fonts: [
     {
@@ -51,18 +51,18 @@ export default defineConfig({
           {
             src: ['./src/assets/fonts/QuaySansITCStd-BookItalic.woff2'],
             weight: 400,
-            style: 'normal',
+            style: 'italic',
             display: 'swap',
           },
           {
             src: ['./src/assets/fonts/QuaySansITCStd-MediumItalic.woff2'],
             weight: 700,
-            style: 'normal',
+            style: 'italic',
             display: 'swap',
           },
         ],
       },
-    }, // 👈 Added missing closing brace here
+    },
     {
       provider: fontProviders.local(),
       name: 'Merriweather',
@@ -85,6 +85,5 @@ export default defineConfig({
         ],
       },
     },
-  ], // 👈 Fixed closing bracket for fonts array
-
+  ],
 });

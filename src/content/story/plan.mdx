@@ -2,24 +2,20 @@
 title: plan
 description: ""
 pubDate: 2026-11-30
-draft: true
+draft: false
 ---
 ---
-## Our process starts when you make the call
-
-```mermaid
-%%{init:{"theme":"dark"}}%%
-
-flowchart LR
-    A[Audit] --> B[Map]
-    B --> C[Design]
-    C --> D[Validate]
-    D --> E{Refine?}
-    E -.noo.-> F[Implement]
-    E --yes--> A
-
-
+## We can start when you make the call
+```d2 sketch
+direction: right
+The Process{
+Audit -> Map -> Design -> Revise?
+Revise?.shape: diamond
+Revise? -> Implement: No
+Revise? -> Audit: Yes
+}
 ```
+<br />
 **AUDIT** → Identify who is present, where friction lives, and how difficulty is distributed.
 
 **MAP** → Reveal hidden operational patterns, boundary restrictions, and unactivated potential.
