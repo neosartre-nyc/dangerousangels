@@ -1,31 +1,122 @@
 ---
-import * as Content from "../content/2026-10-23-sociologyOfDesign.md";
-const compiled = await Content.compiledContent();
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import SOD01 from "../assets/images/sociology/sod-01.webp";
+import SOD02 from "../assets/images/sociology/sod-02.webp";
+import SOD03 from "../assets/images/sociology/sod-03.webp";
+import SOD04 from "../assets/images/sociology/sod-04.webp";
+import SOD05 from "../assets/images/sociology/sod-05.webp";
+import SOD06 from "../assets/images/sociology/sod-06.webp";
+import SOD07 from "../assets/images/sociology/sod-07.webp";
+import SOD08 from "../assets/images/sociology/sod-08.webp";
+import SOD09 from "../assets/images/sociology/sod-09.webp";
+import SOD10 from "../assets/images/sociology/sod-10.webp";
+
+const slides = [
+  { src: SOD01, alt: "Sociology slide 1" },
+  { src: SOD02, alt: "Sociology slide 2" },
+  { src: SOD03, alt: "Sociology slide 3" },
+  { src: SOD04, alt: "Sociology slide 4" },
+  { src: SOD05, alt: "Sociology slide 5" },
+  { src: SOD06, alt: "Sociology slide 6" },
+  { src: SOD07, alt: "Sociology slide 7" },
+  { src: SOD08, alt: "Sociology slide 8" },
+  { src: SOD09, alt: "Sociology slide 9" },
+  { src: SOD10, alt: "Sociology slide 10" },
+];
 ---
-<main class="bg-dacBlue-900 text-white">
-  <Layout>
-    <h1 class="py-8 font-serif text-center text-5xl"
-    >The Cult(ure) Presentation</h1>
-  
-    <!-- Responsive container wrapper -->
-    <div class="flex justify-center px-4 py-8">
-      <div class="w-full max-w-4xl aspect-video overflow-hidden rounded-lg border border-white/10 shadow-xl bg-black/20">
-        <iframe 
-          class="w-full h-full border-0"
-          src="https://embed.figma.com/deck/i2AQCYjuGbKOfdqpAGrQjl/The-Sociology-of-Design-version2?node-id=1-54&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&embed-host=share"
-          allowfullscreen
-          title="The Sociology of Design Presentation"
-        ></iframe>
+
+<Layout>
+  <main class="bg-dacBlue-950 text-white">
+    <div class="flex items-center justify-center">
+      <div
+        id="default-carousel"
+        class="relative w-full"
+        data-carousel="slide"
+        aria-label="Sociology image carousel"
+      >
+        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+          {slides.map((slide, index) => (
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item={index === 0 ? "active" : undefined}
+            >
+              <Image
+                src={slide.src}
+                alt={slide.alt}
+                class="absolute left-1/2 top-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+              />
+            </div>
+          ))}
+        </div>
+
+        <div
+          class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+          aria-label="Choose a slide"
+        >
+          {slides.map((_, index) => (
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-label={`Go to slide ${index + 1}`}
+              aria-current={index === 0 ? "true" : "false"}
+              data-carousel-slide-to={index}
+            />
+          ))}
+        </div>
+
+        <button
+          type="button"
+          class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+          data-carousel-prev
+          aria-label="Previous slide"
+        >
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-base bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+            <svg
+              class="h-5 w-5 text-white rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m15 19-7-7 7-7"
+              />
+            </svg>
+          </span>
+        </button>
+
+        <button
+          type="button"
+          class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+          data-carousel-next
+          aria-label="Next slide"
+        >
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-base bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+            <svg
+              class="h-5 w-5 text-white rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m9 5 7 7-7 7"
+              />
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
-  
-    <section class="py-8 px-8 text-white md:px-16 lg:px-20 xl:px-40">
-      <h2 class="font-serif text-3xl mb-6">{Content.frontmatter.title}</h2>
-      <div class="prose prose-invert max-w-none leading-relaxed">
-        <Fragment set:html={compiled} />
-      </div>
-    </section>
-  </Layout>
-</main>
+  </main>
+</Layout>
