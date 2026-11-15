@@ -29,90 +29,65 @@ const slides = [
 ---
 
 <Layout>
-  <main class="bg-dacBlue-950 text-white">
-    <div class="flex items-center justify-center">
+  <main class="bg-dacBlue-950 text-white min-h-screen">
+    <div class="flex items-center justify-center h-screen">
       <div
         id="default-carousel"
         class="relative w-full"
-        data-carousel="slide"
         aria-label="Sociology image carousel"
       >
-        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+        <!-- Carousel items -->
+        <div class="relative h-dvh overflow-hidden rounded-base">
           {slides.map((slide, index) => (
             <div
-              class="hidden duration-700 ease-in-out"
-              data-carousel-item={index === 0 ? "active" : undefined}
+              class={`duration-700 ease-in-out absolute inset-0 transition-opacity ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+              data-carousel-item
+              data-index={index}
             >
               <Image
                 src={slide.src}
                 alt={slide.alt}
-                class="absolute left-1/2 top-1/2 block h-full w-full -translate-x-1/2 -translate-y-1/2 object-cover"
+                class="block h-full w-full object-cover"
               />
             </div>
           ))}
         </div>
 
-        <div
-          class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
-          aria-label="Choose a slide"
-        >
+        <!-- Indicators (with visible background colors) -->
+        <div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3">
           {slides.map((_, index) => (
             <button
               type="button"
-              class="h-3 w-3 rounded-full"
+              class={`h-3 w-3 rounded-full transition-colors carousel-indicator ${index === 0 ? 'bg-white' : 'bg-white/50 hover:bg-white'}`}
               aria-label={`Go to slide ${index + 1}`}
               aria-current={index === 0 ? "true" : "false"}
-              data-carousel-slide-to={index}
+              data-slide-to={index}
             />
           ))}
         </div>
 
+        <!-- Previous Button -->
         <button
           type="button"
-          class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-          data-carousel-prev
+          class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none carousel-prev"
           aria-label="Previous slide"
         >
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-base bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
-            <svg
-              class="h-5 w-5 text-white rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m15 19-7-7 7-7"
-              />
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-dacSage-600 group-hover:bg-dacSage-800 group-focus:ring-4 group-focus:ring-white">
+            <svg class="h-5 w-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
             </svg>
           </span>
         </button>
 
+        <!-- Next Button -->
         <button
           type="button"
-          class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-          data-carousel-next
+          class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none carousel-next"
           aria-label="Next slide"
         >
-          <span class="inline-flex h-10 w-10 items-center justify-center rounded-base bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
-            <svg
-              class="h-5 w-5 text-white rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m9 5 7 7-7 7"
-              />
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-dacSage-600 group-hover:bg-dacSage-800 group-focus:ring-4 group-focus:ring-white">
+            <svg class="h-5 w-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
             </svg>
           </span>
         </button>
@@ -120,3 +95,59 @@ const slides = [
     </div>
   </main>
 </Layout>
+
+<!-- Astro handles this script automatically. No DOMContentLoaded needed. -->
+<script>
+  // Find all elements
+  const items = document.querySelectorAll('[data-carousel-item]');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  
+  let currentIndex = 0;
+  const totalSlides = items.length;
+
+  function showSlide(index) {
+    // Handle wrapping
+    if (index >= totalSlides) currentIndex = 0;
+    else if (index < 0) currentIndex = totalSlides - 1;
+    else currentIndex = index;
+
+    // Update slides (using opacity for smoother transitions than hidden/block)
+    items.forEach((item, i) => {
+      if (i === currentIndex) {
+        item.classList.remove('opacity-0');
+        item.classList.add('opacity-100');
+        item.setAttribute('aria-current', 'true');
+      } else {
+        item.classList.remove('opacity-100');
+        item.classList.add('opacity-0');
+        item.setAttribute('aria-current', 'false');
+      }
+    });
+
+    // Update indicators
+    indicators.forEach((ind, i) => {
+      if (i === currentIndex) {
+        ind.classList.remove('bg-white/50');
+        ind.classList.add('bg-white');
+        ind.setAttribute('aria-current', 'true');
+      } else {
+        ind.classList.remove('bg-white');
+        ind.classList.add('bg-white/50');
+        ind.setAttribute('aria-current', 'false');
+      }
+    });
+  }
+
+  // Attach event listeners
+  if (prevBtn) prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+  
+  indicators.forEach((ind, i) => {
+    ind.addEventListener('click', () => showSlide(i));
+  });
+
+  // Optional: Auto-play every 5 seconds
+  // setInterval(() => showSlide(currentIndex + 1), 5000);
+</script>

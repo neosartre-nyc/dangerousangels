@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-@import "flowbite/src/themes/default";
-@plugin "flowbite/plugin";
-@import "flowbite/src/themes/default";
-@source "../../node_modules/flowbite";
-
-
 @theme {
   --color-dacBlue-50: #ebfffe;
   --color-dacBlue-100: #cdffff;
