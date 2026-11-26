@@ -7,27 +7,31 @@ draft: false
 ## We can start when you make the call
 ```d2
 vars: {
-  B1: "#b71e26"
-  B2: "#7e1e23"
-  B3: "#135666"
-  B4: "#02a3b8"
-  AA2: "#7e1e23"
-  AA4: "#590e12"
-  AA5: "#f5f5f1"
-  AB4: "#4b4b38"
-  AB5: "#424233"
-}
+      B1: "#042730"
+      B2: "#0e0e0f"
+      B3: "#126878"
+      B4: "#098295"
+      B5: "#02a3b8"
+      B6: "#02a3b8"
+
+      AA2: "#ed464f"
+      AA4: "#b71e26"
+      AA5: "#fba6ab"
+
+      AB4: "#999d78"
+      AB5: "#585841"
+    }
 
 direction: right
 style.fill: "#4b4b38"
 The Process: {
   style: {
     stroke: ${B4}
-    fill: ${B3}
+    fill: ${B4}
   }
   Audit -> Map -> Design -> Revise?:{
     style: {
-    stroke: ${B4}
+    stroke: ${B1}
     fill: ${B3}
   }
   }
@@ -35,30 +39,30 @@ The Process: {
 
   Revise?.shape: diamond
   Revise? -> Implement: No {
-    style.stroke: ${B4}
+    style.stroke: ${B1}
   }
   Revise? -> Audit: Yes {
-    style.stroke: ${B4}
+    style.stroke: ${B1}
   }
 
   # Reference the variables using ${var_name}
   Audit.style:{
     fill: ${B2}
-    stroke: ${B2}
+    stroke: ${B1}
   }
   Map.style:{
     fill: ${B2}
-    stroke: ${B2}
+    stroke: ${B1}
   }
   Design.style:{
     fill: ${B2}
-    stroke: ${B2}
+    stroke: ${B1}
   }
   Revise?.style:{
     fill: ${B2}
-    stroke: ${B2}
+    stroke: ${B1}
   }
-  Implement.style.fill: ${B4}
+  Implement.style.fill: ${AA4}
   Implement.style.double-border: true
   Implement.style.stroke: "black"
 }
